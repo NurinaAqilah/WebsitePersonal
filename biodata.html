@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Personal Website</title>
+	<style>
+		body
+		{
+			background-image: url(image/cameron.jpg);
+			height: 100vh;
+			background-size: cover;
+			background-position: center;
+			background-color: dimgrey;
+			background-blend-mode: multiply;
+			
+		}
+		
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: Times New Roman;
+		}
+
+		ul{
+			float: right;
+			list-style-type: none;
+			margin-top: 30px;
+		}
+
+		ul li{
+			display: inline-block;
+		}
+
+		ul li a{
+			text-decoration: none;
+			color: whitesmoke;
+			padding: 5px 20px;
+			border: 1px solid transparent;
+			transition: 0.6s ease;
+		}
+
+		ul li a:hover{
+			background-color: white;
+			color: black;
+
+		}
+
+		ul li.active a{
+			background-color: white;
+			color: black;
+		}
+		.logo img{
+			float: left;
+			width: 110px;
+			height: auto;
+		}
+
+		.main{
+			max-width: 1200px;
+			margin: auto;
+		}
+
+		.title{
+			position: absolute;
+			top: 50%;
+			left: 20%;
+			transform: translate(-50%,-50%);
+		}
+
+		.title h1{
+			color: white;
+			font-size: 70px;
+		}
+
+		.heading{
+   			text-align: center;
+    		margin:2px;
+    		font-size: 40px;
+   			padding:1rem;
+   			border-bottom: .1rem solid #fff4;
+    		color:#fff;
+    		font-family: Times New Roman;
+}
+
+		.heading span{
+    		color:orange;
+    		font-family: Times New Roman;
+}
+
+		header .user img{
+    		height:15rem;
+    		width:15rem;
+    		border-radius: 50%;
+    		object-fit: cover;
+   			border:.10px solid white;
+   	 		text-align: center;
+   	 		position: relative;
+   			margin-top: 5%;
+   			left: 380px;
+		}
+
+		header .user .name{
+    		font-size: 25px;
+    		color:#fff;
+    		position: relative;
+    		left: 490px;
+ 
+
+		}
+
+		header .user .post{
+    		font-size: 18px;
+    		color:#eee;
+    		position: relative;
+    		left: 520px;
+ 
+		}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+
+.about .row .info{
+    flex:1 1 48rem;
+    padding:2rem 1rem;
+    padding-left: 6rem;
+}
+
+.about .row .info h3{
+    font-size: 2rem;
+    color:var;
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.about .row .info h3 span{
+    color:#eee;
+    padding:0 .5rem;
+}
+
+.about .row .counter{
+    flex:1 1 48rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box{
+    width:20rem;
+    background:ghostwhite;
+    text-align: center;
+    padding: 2rem;
+    margin:2rem;
+}
+
+.about .row .counter .box span{
+    font-size: 2rem;
+    color:black;
+}
+
+.about .row .counter .box h3{
+    font-size: 1rem;
+    color:lightseagreen;
+}
+
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="main">
+		<div class="logo">
+			<img src="image/naz.png">
+		</div>	
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li class="active"><a href="biodata.html">BIODATA</a></li>
+				<li><a href="experience.html">EXPERIENCE</a></li>
+				<li><a href="education.html">EDUCATION</a></li>
+				<li><a href="family.html">FAMILY</a></li>
+				<li><a href="gallery.html">GALLERY</a></li>
+				<li><a href="contact.html">CONTACT ME</a></li>
+				
+			</ul>
+		</div>
+		<div class="user">
+        <img src="image/nurina.jpg" alt="">
+        <h3 class="name">Nurina Aqilah Binti Zulkanain</h3>
+        <p class="post">Diploma in Information Management</p>
+    </div>
+
+    <section class="about" id="about">
+
+<h1 class="heading"> <span>ABOUT</span> ME </h1>
+
+	<div class="row">  
+    <div class="counter">
+
+        <div class="box">
+            <span>20</span>
+            <h3>YEARS OLD</h3>
+        </div>
+
+        <div class="box">
+            <span>02 JULY 2001</span>
+            <h3>DATE OF BIRTH</h3>
+        </div>
+
+        <div class="box">
+            <span>Kota Bharu,Kelantan</span>
+            <h3>ADDRESS</h3>
+        </div>
+
+        <div class="box">
+            <span>FEMALE</span>
+            <h3>GENDER</h3>
+        </div>
+
+        <div class="box">
+            <span>MALAYSIAN</span>
+            <h3>NATIONALITY</h3>
+        </div>
+
+    </div>
+    </div>
+
+	</header>
+
+</body>
+</html>
